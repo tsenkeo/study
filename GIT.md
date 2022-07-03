@@ -204,12 +204,16 @@ Cброс состояния репозитория до последнего к
 [Видеоурок](https://gbcdn.mrgcdn.ru/uploads/record/53882/attachment/d3d35d4a1e59a31666293b62815fa80f.mp4)
 	
 	git tag [name version, for example, 1.0]
+
+.
 	
 	git tag 
 
 Список версий:
 	
-	git tag --list 
+	git tag --list
+
+Записать тег в удаленный репозиторий:
 	
 	git push --tags
 
