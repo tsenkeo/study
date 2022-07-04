@@ -24,7 +24,7 @@ Wififte предустановлен в Kali Linux, однако, есть не 
 	
 Запустить атаку на WPS:
 
-	sudo wifite --wps-only --bully --reaver --ignore-lock --random-mac
+	sudo wifite --wps-only --bully --ignore-lock --random-mac
 	
 Запустить взлом перехваченного рукопожатия (Handshake):
 
