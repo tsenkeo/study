@@ -35,6 +35,12 @@ Wififte предустановлен в Kali Linux, однако, есть не 
 **Cловари можно скачать [здесь](https://disk.yandex.ru/d/v4Lbt1p47K8bIw)**
 
 
+Перезапустить сетевой интерфейс после использования Wifite:
+
+	sudo airmon-ng stop wlan0mon 
+	
+*Название интерфейса может отличаться.
+	
 
 # Wifiphisher 
 
