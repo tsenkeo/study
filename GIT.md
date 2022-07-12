@@ -151,7 +151,7 @@ Cброс состояния репозитория до последнего к
 
 Склонировать только нужную ветку:
 
-	git clone –-single-branch –b [branch] [path to repo]
+	git clone [path to repo] –-single-branch=[branch] 
 
 Проверка ветки, на которой находишься:
 
