@@ -4,13 +4,23 @@ Wififte предустановлен в Kali Linux, однако, есть не 
 
 Доустановка зависимостей для Wifite:
 
-	sudo apt-get update && sudo apt-get upgrade
+	#---------------------------------- Pyrit -------------------------------------------
+	sudo apt-get install -y python3-scapy libssl-dev zlib1g-dev libpcap0.8-dev python2-dev
+	cd ~/Загрузки && sudo wget -c https://github.com/JPaulMora/Pyrit/archive/v0.5.0.tar.gz
+	sudo tar -xf v0.5.0.tar.gz && cd Pyrit-0.5.0 && sudo sed -i "s/COMPILE_AESNI/NO_COMPILE_AESNI/" cpyrit/_cpyrit_cpu.c
+	sudo python2 setup.py build 
+	sudo python2 setup.py install
+	#--------------------------------------------------------------------------------------
+	sudo apt-get install -y hashcat
+	sudo apt-get install -y hcxtools
+	sudo apt-get install -y hcxdumptool 
+	sudo apt-get install -y bully
+	sudo apt-get install -y macchanger
 
-	sudo apt-get install hcxtools
 
-	sudo apt-get install hcxdumptool 
+Установить сам Wifite:
 
-	git clone https://github.com/hacker3983/pyrit-installer && cd pyrit-installer && sudo bash install.sh
+	sudo apt-get install -y wifite
 	
 Чтобы запустить атаку с заданым временем для PMKID: 
 
