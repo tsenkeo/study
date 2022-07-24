@@ -4,6 +4,9 @@ Wififte предустановлен в Kali Linux, однако, есть не 
 
 Доустановка зависимостей для Wifite:
 
+	sudo apt-get install -y python2 
+	sudo apt-get install python2-pip
+
 	#---------------------------------- Pyrit -------------------------------------------
 	sudo apt-get install -y python3-scapy libssl-dev zlib1g-dev libpcap0.8-dev python2-dev
 	cd ~/Загрузки && sudo wget -c https://github.com/JPaulMora/Pyrit/archive/v0.5.0.tar.gz
